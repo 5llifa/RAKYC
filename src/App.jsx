@@ -19,15 +19,10 @@ export default function App() {
       <main>
         <div className="cards-bg">
           <section className="cards-grid">
-            {members.slice(0,8).map((m, idx) => (
+            {members.map((m, idx) => (
               <MemberCard key={m.id} {...m} className={idx === 0 ? 'highlight-card' : ''} />
             ))}
           </section>
-          <div className="cards-row-bottom">
-            {members.slice(8).map((m) => (
-              <MemberCard key={m.id} {...m} />
-            ))}
-          </div>
         </div>
       </main>
       <footer className="site-footer">© {new Date().getFullYear()} RAKYC Council</footer>
