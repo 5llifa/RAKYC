@@ -120,15 +120,30 @@ body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helveti
   .header-text .lead {
     font-size: 0.98rem;
   }
-  .cards-row-bottom {
-    flex-direction: column;
-    gap: 14px;
-    align-items: stretch;
-    margin-top: 12px;
+  .cards-bg {
+    padding-left: 8px;
+    padding-right: 8px;
   }
   .cards-grid {
-    gap: 12px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
     margin-top: 14px;
+    width: 100%;
+  }
+  .cards-row-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: stretch;
+    margin-top: 14px;
+    width: 100%;
+  }
+  .member-card {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 350px;
+    min-width: 0;
   }
 }
 
