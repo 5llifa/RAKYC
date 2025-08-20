@@ -177,26 +177,6 @@
     margin-top: 14px;
     width: 100%;
   }
-
-.top-bg {
-  position: relative;
-  z-index: 1;
-  padding-bottom: 12px;
-  overflow: visible;
-}
-.top-bg::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100vw;
-  height: 100%;
-  background: #fff;
-  border-bottom-left-radius: 32px;
-  border-bottom-right-radius: 32px;
-  box-shadow: 0 4px 24px rgba(124,111,92,0.08);
-  z-index: -1;
 }
 
 @media (min-width: 1200px) {
@@ -217,22 +197,6 @@
   .cards-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 12px;
-  }
-}
-
-@media (max-width: 480px) {
-  .cards-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-  }
-  .member-card {
-    max-width: 98vw;
-    min-width: 0;
-    padding: 10px;
-  }
-  .cards-bg {
-    padding-left: 2px;
-    padding-right: 2px;
   }
 }
 
