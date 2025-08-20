@@ -105,6 +105,31 @@ body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helveti
   .header-text {
     text-align: left;
   }
+  .top-bg {
+    padding-bottom: 6px;
+    padding-top: 10px;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+  }
+  .site-header {
+    margin: 18px 0 8px 0;
+  }
+  .header-text h1 {
+    font-size: 1.4rem;
+  }
+  .header-text .lead {
+    font-size: 0.98rem;
+  }
+  .cards-row-bottom {
+    flex-direction: column;
+    gap: 14px;
+    align-items: stretch;
+    margin-top: 12px;
+  }
+  .cards-grid {
+    gap: 12px;
+    margin-top: 14px;
+  }
 }
 
 .cards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;width:100%;max-width:1100px;margin-top:24px}
