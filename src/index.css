@@ -7,9 +7,14 @@
     max-width: 1100px;
     margin-top: 24px;
   }
-  .cards-grid > .member-card:nth-last-child(-n+2) {
+  .cards-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .cards-grid > .member-card:nth-last-child(2),
+  .cards-grid > .member-card:last-child {
     grid-column: 2 / span 2;
     justify-self: center;
+    display: inline-block;
   }
 }
 @media (max-width: 600px) {
@@ -125,12 +130,13 @@ body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helveti
     align-items: flex-start;
     gap: 10px;
   }
-  .council-logo {
-    align-self: flex-end;
-    width: 90px;
-    height: 90px;
-    margin-left: 25px; /* Move logo a little to the left on phone */
-  }
+    .council-logo {
+      align-self: flex-end;
+      width: 90px;
+      height: 90px;
+      margin-left: 16px;
+      margin-right: 16px;
+    }
   .header-text {
     text-align: left;
   }
