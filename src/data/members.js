@@ -11,7 +11,7 @@ const members = [
     name: 'فاطمة الشحي',
     role: 'نائب رئيس المجلس',
   photo: 'assets/member 2 - vice president.jpg',
-    description: 'Focused on educational initiatives and public outreach.'
+    description: 'Focused on educational initiatives and.'
   },
   {
     id: 3,
