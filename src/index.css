@@ -1,4 +1,4 @@
-/* --- DESKTOP STYLES (original) --- */
+/* Restored original desktop-only CSS */
 .app-root {
   min-height: 100%;
   display: flex;
@@ -36,7 +36,7 @@
 }
 .header-text .lead {
   margin-top: 8px;
-  color: var(--muted);
+  color: #7c6f5c;
   font-size: 1.1rem;
 }
 .council-logo {
@@ -83,7 +83,7 @@
   display:flex;
   align-items:center;
   justify-content:center;
-  background:linear-gradient(180deg,var(--moe-gold),#fff);
+  background:linear-gradient(180deg,#f2e3c6,#fff);
   border:4px solid rgba(0,0,0,0.04);
   margin-left:auto;
   margin-right:auto;
@@ -97,217 +97,5 @@
 .card-body{padding:12px;text-align:center}
 .member-name{margin:8px 0 4px;font-size:1.05rem;color:#2d2320}
 .member-role{margin:0;font-weight:600;color:#bfa77a}
-.member-desc{margin-top:8px;color:var(--muted);font-size:0.95rem}
-.site-footer{margin:28px 0 8px;color:var(--muted)}
-
-/* --- MOBILE STYLES (only for phones) --- */
-@media (max-width: 600px) {
-  .header-flex {
-    flex-direction: column-reverse;
-    align-items: flex-start;
-    gap: 10px;
-  }
-  .council-logo {
-    align-self: flex-end;
-    width: 90px;
-    height: 90px;
-  }
-  .header-text {
-    text-align: left;
-  }
-  .site-header {
-    margin: 18px 0 8px 0;
-  }
-  .header-text h1 {
-    font-size: 1.4rem;
-  }
-  .header-text .lead {
-    font-size: 0.98rem;
-  }
-  .cards-bg {
-    padding-left: 8px;
-    padding-right: 8px;
-  }
-  .cards-grid {
-    grid-template-columns: 1fr;
-    gap: 18px;
-    margin-top: 14px;
-    width: 100%;
-  }
-  .member-card {
-    max-width: 98vw;
-    min-width: 0;
-    padding: 10px;
-  }
-}
-.highlight-card {
-  background: #f5e9da !important; /* lighter beige */
-  color: #2d2320;
-}
-
-
-
- :root{
-  --moe-green:#bfa77a;
-  --moe-gold:#f2e3c6;
-  --bg:#e2c9a5; /* darker beige for background */
-  --card:#f5e9da; /* lighter beige for cards */
-  --header-bg:#f5e9da; /* solid beige for top */
-  --muted:#7c6f5c;
-}
-
-*{box-sizing:border-box}
-.site-header{text-align:center;margin:36px 0 12px 0}
- .header-bg-square {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 120px;
-  background: #f5e9da;
-  z-index: 0;
-  border-bottom-left-radius: 32px;
-  border-bottom-right-radius: 32px;
-  box-shadow: 0 4px 24px rgba(124,111,92,0.08);
-}
- 
-.header-flex {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-  max-width: 1800px;
-  margin: 0 auto;
-}
-
-.header-text {
-  text-align: left;
-}
-
-.header-text h1 {
-  margin: 0;
-  color: #a08c6b;
-  font-size: 2.1rem;
-}
-
-.header-text .lead {
-  margin-top: 8px;
-  color: var(--muted);
-  font-size: 1.1rem;
-}
-
-.council-logo {
-  width: 130px;
-  height: 130px;
-  object-fit: contain;
-  margin-bottom: 0;
-  display: block;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-@media (max-width: 600px) {
-  .header-flex {
-    flex-direction: column-reverse;
-    align-items: flex-start;
-    gap: 10px;
-  }
-  .council-logo {
-    align-self: flex-end;
-    width: 90px;
-    height: 90px;
-  }
-  .header-text {
-    text-align: left;
-  }
-  .site-header {
-    margin: 18px 0 8px 0;
-  }
-  .header-text h1 {
-    font-size: 1.4rem;
-  }
-  .header-text .lead {
-    font-size: 0.98rem;
-  }
-  .cards-bg {
-    padding-left: 8px;
-    padding-right: 8px;
-  }
-  .cards-grid {
-    grid-template-columns: 1fr;
-    gap: 18px;
-    margin-top: 14px;
-    width: 100%;
-  }
-}
-
-@media (min-width: 1200px) {
-  .top-bg {
-    max-width: 100vw;
-    border-bottom-left-radius: 32px;
-    border-bottom-right-radius: 32px;
-  }
-  .header-flex {
-    max-width: 1100px;
-    margin: 0 auto;
-    width: 100%;
-    padding: 0 16px;
-  }
-}
-
-@media (max-width: 700px) {
-  .cards-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
-  }
-}
-
-.member-card {
-  background: #f5e9da;
-  border-radius:12px;
-  box-shadow:0 6px 18px rgba(124,111,92,0.08);
-  overflow:hidden;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  padding:16px;
-  transition:transform .18s ease,box-shadow .18s ease;
-}
-
-.member-card:hover{
-  transform:translateY(-6px);
-  box-shadow:0 14px 28px rgba(2,6,23,0.12);
-}
-.photo-wrap{
-  width:120px;
-    .header-flex {
-      flex-direction: column-reverse;
-      align-items: center;
-      gap: 10px;
-      justify-content: center;
-    }
-    .council-logo {
-      align-self: center;
-      width: 90px;
-      height: 90px;
-    }
-    .header-text {
-      text-align: center;
-      padding-left: 0;
-    }
-    .top-bg {
-      padding-bottom: 6px;
-      padding-top: 10px;
-      border-bottom-left-radius: 18px;
-      border-bottom-right-radius: 18px;
-    }
-    .site-header {
-      margin: 18px 0 8px 0;
-    }
-    .header-text h1 {
-      font-size: 1.4rem;
-    }
-    .header-text .lead {
-      font-size: 0.98rem;
-    }
-}
+.member-desc{margin-top:8px;color:#7c6f5c;font-size:0.95rem}
+.site-footer{margin:28px 0 8px;color:#7c6f5c}
