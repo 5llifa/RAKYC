@@ -25,7 +25,7 @@ const members = [
     name: 'سيف الياسي',
     role: 'مسؤول البيانات والاحصاء',
   photo: 'assets/member 4.jpg',
-    description: 'Manages council a.'
+    description: 'Manages council'
   },
   {
     id: 5,
