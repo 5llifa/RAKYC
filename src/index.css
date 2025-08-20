@@ -19,23 +19,11 @@
   --card:#f5e9da; /* lighter beige for cards */
   --header-bg:#f5e9da; /* solid beige for top */
   --muted:#7c6f5c;
-
+}
 
 *{box-sizing:border-box}
-html,body,#root{height:100%}
-body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial; background:var(--bg); color:#4b3e2e}
-
-.app-root{min-height:100%;display:flex;flex-direction:column;align-items:center;padding:0}
-.top-bg {
-  width: 100vw;
-  background: #fff;
-  border-bottom-left-radius: 32px;
-  border-bottom-right-radius: 32px;
-  box-shadow: 0 4px 24px rgba(124,111,92,0.08);
-  padding-bottom: 12px;
-}
 .site-header{text-align:center;margin:36px 0 12px 0}
-.header-bg-square {
+ .header-bg-square {
   position: absolute;
   top: 0;
   left: 0;
@@ -47,15 +35,7 @@ body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helveti
   border-bottom-right-radius: 32px;
   box-shadow: 0 4px 24px rgba(124,111,92,0.08);
 }
-  position: relative;
-  z-index: 1;
-  padding-top: 32px;
-  padding-bottom: 16px;
-  padding-left: 32px;
-  padding-right: 32px;
-  background: none;
-}
-
+ 
 .header-flex {
   display: flex;
   align-items: center;
@@ -149,6 +129,36 @@ body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helveti
 
 .cards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;width:100%;max-width:1100px;margin-top:24px}
 
+@media (max-width: 900px) {
+  .cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+  }
+}
+
+@media (max-width: 700px) {
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cards-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .member-card {
+    max-width: 98vw;
+    min-width: 0;
+    padding: 10px;
+  }
+  .cards-bg {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+}
+
 .member-card {
   background: #f5e9da;
   border-radius:12px;
@@ -167,30 +177,33 @@ body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helveti
 }
 .photo-wrap{
   width:120px;
-  height:120px;
-  border-radius:16px;
-  overflow:hidden;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  background:linear-gradient(180deg,var(--moe-gold),#fff);
-  border:4px solid rgba(0,0,0,0.04);
-  margin-left:auto;
-  margin-right:auto;
-}
-.photo-wrap img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  display:block;
-}
-.card-body{padding:12px;text-align:center}
-.member-name{margin:8px 0 4px;font-size:1.05rem;color:#2d2320}
-.member-role{margin:0;font-weight:600;color:#bfa77a}
-.member-desc{margin-top:8px;color:var(--muted);font-size:0.95rem}
-
-.site-footer{margin:28px 0 8px;color:var(--muted)}
-
-@media(min-width:900px){
-  .member-card{flex-direction:column}
-}
+    .header-flex {
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 10px;
+      justify-content: center;
+    }
+    .council-logo {
+      align-self: center;
+      width: 90px;
+      height: 90px;
+    }
+    .header-text {
+      text-align: center;
+      padding-left: 0;
+    }
+    .top-bg {
+      padding-bottom: 6px;
+      padding-top: 10px;
+      border-bottom-left-radius: 18px;
+      border-bottom-right-radius: 18px;
+    }
+    .site-header {
+      margin: 18px 0 8px 0;
+    }
+    .header-text h1 {
+      font-size: 1.4rem;
+    }
+    .header-text .lead {
+      font-size: 0.98rem;
+    }
